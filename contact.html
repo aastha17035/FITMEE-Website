@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section><ul>
-         <h1> FITMEE: "APPROACHING TOWARDS THE BEST VERSION"</h1></ul>
-         <a href="index.html">
-        <button> home </button></a>
-         <a href="information.html">
-         <button> information</button></a>
-        <a href="about.html">
-          <button> about </button> </a>
-          <a href="sections.html">
-        <button > sections
-        </button></a>
-        <a href="contact.html">
-    <button> contact us</button></a>
-</section>
-<section> 
-<h2> GET IN TOUCH WITH US!</h2>
-<p> We value your feedback and inquiries. Please fill out the form below to reach out to us. Whether you have questions about our services, need assistance, or want to share your thoughts, we're here to help. Our team will get back to you as soon as possible. Thank you for choosing Fitmee!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitmee - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-</section><section>
-<div class="login-container">
-    <h1>FEEDBACK</h1>
-    <form>
-      <div class="input-box">
-        <input type="text" placeholder="Name" required>
-      <div class="input-box">
-        <input type="email" placeholder="Email" required>
-        <div class="input-box">
-        <textarea id="feed" placeholder="Your feedback here..." required></textarea></div></form></div>
-      <button type="submit" class="btn">Send</button></form></div></section></body>
-      
-      <footer>
-        <section id=" details"> OUR CONTACT DETAILS:
-        <p> Email: fitmee@gmail.com
-            <br> Phone: +1-234-567-890
-      </section>
-      <h1 id="last"> THANKYOU FOR VISITING US!</h1></footer>
+    <!-- Navigation Section -->
+    <section class="navigation">
+        <h1>FITMEE: "APPROACHING TOWARDS THE BEST VERSION"</h1>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="information.html"><button>Information</button></a>
+            <a href="about.html"><button>About</button></a>
+            <a href="sections.html"><button>Sections</button></a>
+            <a href="contact.html"><button>Contact Us</button></a>
+        </nav>
+    </section>
+
+    <!-- Intro Section -->
+    <section>
+        <h2>GET IN TOUCH WITH US!</h2>
+        <p>
+            We value your feedback and inquiries. Please fill out the form below to reach out to us. 
+            Whether you have questions about our services, need assistance, or want to share your thoughts, 
+            we're here to help. Our team will get back to you as soon as possible. 
+            Thank you for choosing Fitmee!
+        </p>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section>
+        <div class="login-container">
+            <h1>FEEDBACK</h1>
+            <form action="contact.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <textarea name="feedback" id="feed" placeholder="Your feedback here..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section id="details">
+            <h3>OUR CONTACT DETAILS:</h3>
+            <p>
+                Email: fitmee@gmail.com<br>
+                Phone: +1-234-567-890
+            </p>
+        </section>
+        <h1 id="last">THANK YOU FOR VISITING US!</h1>
+    </footer>
+
+</body>
+</html>
